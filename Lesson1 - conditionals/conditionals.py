@@ -17,7 +17,7 @@ else:
 
 # ========================================
 # SECTION 2: AGE CATEGORY CLASSIFIER
-# ========================================
+# ========================================          
 
 age_input = input("Input your age:")
 if age_input:
@@ -41,7 +41,20 @@ if age_input:
 # SECTION 3: STUDENT STATUS CHECKER
 # ========================================
 
+age = 17
+gpa = 3.8
+has_license = True
 
+can_drive = age >= 16 and has_license
+honor_roll = gpa >= 3.5
+eligible = can_drive and honor_roll and age >= 17
+
+print(f"Can drive: {can_drive}")
+print(f"Honor roll: {honor_roll}")
+print(f"Eligible: {eligible}")
+
+if eligible:
+    print("Scholarship candidate")
 # ========================================
 # SECTION 4: GRADE VALIDATOR CHALLENGE
 # ========================================
