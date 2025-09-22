@@ -1,7 +1,7 @@
 height = int(input("Please enter your height (in):"))
-weight = int(input("Please enter your weight (lbs):"))
+weight = int(input("Please enter your weight (lbs):")) 
 
-BMI = (int(weight) / int(height^2)) * 703
+BMI = (int(weight) / (int(height)*int(height))) * 703
 
 category = ("Underweight" if BMI < 18.5 else 
             "Normal" if 18.5 <= BMI < 25 else
